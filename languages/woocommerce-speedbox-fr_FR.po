@@ -1,0 +1,486 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woocommerce speedbox v1.0.0\n"
+"POT-Creation-Date: 2017-03-20 10:10+0000\n"
+"PO-Revision-Date: 2017-03-20 10:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ahmed MAHI <1hmedmahi@gmail.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Target-Locale: fr_FR\n"
+"X-Poedit-SearchPath-0: includes\n"
+"X-Poedit-SearchPath-1: woocommerce-speedbox.php\n"
+
+#: includes/classes/class.speedbox-helper.php:51
+msgid "This shipping method is only available in Morocco ."
+msgstr "Cette méthode d'expédition n'est disponible qu'au Maroc."
+
+#: includes/classes/class.speedbox-helper.php:63
+msgid "There are no Pickup points near this address, please modify it."
+msgstr ""
+"Aucun point relais  n'est disponible autour de l'adresse saisie, merci de la "
+"modifier."
+
+#: includes/classes/class.speedbox-helper.php:104
+#: includes/classes/class.speedbox-helper.php:107
+#: includes/classes/class.speedbox-helper.php:110
+#: includes/classes/class.speedbox-helper.php:113
+#: includes/classes/class.speedbox-helper.php:116
+#: includes/classes/class.speedbox-helper.php:119
+#: includes/classes/class.speedbox-helper.php:122
+msgid "Closed"
+msgstr "Fermé"
+
+#: includes/classes/class.speedbox-helper.php:133
+msgid "Speedbox Relais is not available at the moment, please try again shortly."
+msgstr ""
+"Speedbox Relais est temporairement indisponible, merci de réessayer dans "
+"quelques instants."
+
+#: includes/classes/class.speedbox-shipping-management.php:59
+msgid "d/m/Y"
+msgstr ""
+
+#: includes/classes/class.speedbox-shipping-management.php:81
+msgid "#order ID :"
+msgstr "#Commande ID :"
+
+#: includes/classes/class.speedbox-shipping-management.php:124
+msgid "Package well removed"
+msgstr "Colis bien supprimé"
+
+#: includes/classes/class.speedbox-shipping-management.php:142
+msgid "Support well sent:"
+msgstr "Prise en charge bien envoyé :"
+
+#: includes/classes/class.speedbox-shipping-management.php:154
+msgid "Statut historique"
+msgstr "Historique des statuts"
+
+#: includes/classes/class.speedbox-shipping-management.php:155
+msgid "last updated timestamp"
+msgstr "Dernière mise à jour"
+
+#: includes/classes/class.speedbox-shipping-management.php:155
+msgid "d/m/Y H:i"
+msgstr ""
+
+#: includes/classes/class.speedbox-shipping-management.php:161
+msgid "Parcels already treated here is the information:"
+msgstr "Colis déjà traité voici les informations :"
+
+#: includes/classes/class.speedbox-shipping-management.php:172
+msgid ""
+"Dear customer, you can follow your Speedbox parcel delivery by Refresh a page"
+msgstr ""
+"Cher client, Une demande de prise en charge de votre colis est envoyé, vous "
+"pouvez suivre l'acheminement de votre colis par Speedbox sur votre fiche "
+"commande dans la section \"Staut du colis Speedbox\"  tout en bas de la page."
+
+#: includes/classes/class.speedbox-shipping-management.php:188
+#: includes/classes/class.speedbox-shipping-management.php:190
+msgid "#Commande ID :"
+msgstr "#Commande ID :"
+
+#: includes/classes/class.speedbox-shipping-management.php:209
+#: includes/classes/class.speedbox-shipping-management.php:218
+#: includes/classes/class.speedbox-shipping-management.php:227
+#: includes/classes/class.speedbox-shipping-management.php:237
+msgid "No order selected"
+msgstr "Aucune commande sélectionnée"
+
+#: includes/classes/class.speedbox-shipping-management.php:246
+msgid "Delivered orders statuses were updated"
+msgstr "Les commandes livrées ont été mises à jour"
+
+#: includes/classes/class.speedbox-shipping-management.php:253
+msgid "There are no Speedbox orders"
+msgstr "Aucune commande Speedbox"
+
+#: includes/classes/class.speedbox-shipping-management.php:287
+msgid "Injection of treatment requests"
+msgstr "Envoyer une demande de prise en charge"
+
+#: includes/classes/class.speedbox-shipping-management.php:288
+msgid "Parcels trace"
+msgstr "Tracker les colis"
+
+#: includes/classes/class.speedbox-shipping-management.php:289
+msgid "Update delivered orders"
+msgstr "Traiter les commandes livrées"
+
+#: includes/classes/class.speedbox-shipping-management.php:290
+msgid "Cancel of treatment requests"
+msgstr "Annuler les colis"
+
+#: includes/classes/class.speedbox-shipping.php:80
+msgid "SpeedBox delivery plugin for WooCommerce - Morocco vendors only"
+msgstr "Module de livraison SpeedBox Relais pour WooCommerce - Maroc uniquement"
+
+#: includes/classes/class.speedbox-shipping.php:156
+msgid "Enable/Disable"
+msgstr "Activer/Désactiver"
+
+#: includes/classes/class.speedbox-shipping.php:158
+msgid "Enable SpeedBox Relais"
+msgstr "Activer la livraison SpeedBox Relais"
+
+#: includes/classes/class.speedbox-shipping.php:162
+msgid "Title"
+msgstr "Titre"
+
+#: includes/classes/class.speedbox-shipping.php:164
+msgid "The title which the user sees during checkout."
+msgstr ""
+"Ce titre sera affiché en front-office, lors de la sélection du mode du "
+"livraison."
+
+#: includes/classes/class.speedbox-shipping.php:165
+msgid "Pickup point delivery"
+msgstr "Livraison en relais Pickup"
+
+#: includes/classes/class.speedbox-shipping.php:169
+msgid "Merchant ID"
+msgstr "ID Marchand"
+
+#: includes/classes/class.speedbox-shipping.php:171
+msgid "Please enter the merchant ID provided by SpeedBox."
+msgstr "Veuillez saisir l'ID Marchand fourni par SpeedBox."
+
+#: includes/classes/class.speedbox-shipping.php:175
+msgid "Api token"
+msgstr "Api token"
+
+#: includes/classes/class.speedbox-shipping.php:177
+msgid "Contact your SpeedBox sales representative to obtain this data"
+msgstr "Contacter votre attaché commercial SpeedBox pour obtenir ces données"
+
+#: includes/classes/class.speedbox-shipping.php:180
+msgid "Security Key"
+msgstr "Clé de sécurité"
+
+#: includes/classes/class.speedbox-shipping.php:182
+msgid "Please enter the secuity key provided by SpeedBox."
+msgstr "Veuillez saisir la clé de sécurité fournie par SpeedBox."
+
+#: includes/classes/class.speedbox-shipping.php:186
+msgid "SpeedBox Relais Webservice URL"
+msgstr "URL Webservice SpeedBox Relais"
+
+#: includes/classes/class.speedbox-shipping.php:188
+msgid "Please enter the SpeedBox Relais WebService URL."
+msgstr "Veuillez saisir l'URL du Webservice SpeedBox Relais"
+
+#: includes/classes/class.speedbox-shipping.php:192
+msgid "Enable Cash on Delivery"
+msgstr "Activer le Paiement à la Livraison"
+
+#: includes/classes/class.speedbox-shipping.php:194
+msgid "Link speedbox to \"cash at delivery\" mode native to woocommerce"
+msgstr ""
+"Lier speedbox au mode de \"paiement à la livraison\" natif de woocommerce ( si "
+"ce mode de paiement est activé est sélectionné par le client la valeur "
+"\"cash_due\" sera egale au valeur du montant de la commande )"
+
+#: includes/classes/class.speedbox-shipping.php:199
+msgid "Tax Status"
+msgstr "Statut fiscal"
+
+#: includes/classes/class.speedbox-shipping.php:203
+msgid "Taxable"
+msgstr "Appliquer la TVA"
+
+#: includes/classes/class.speedbox-shipping.php:204
+msgid "None"
+msgstr "Hors taxes"
+
+#: includes/classes/class.speedbox-shipping.php:208
+msgid "Enable free shipping coupons mangement"
+msgstr "Tenir compte des coupons offrant les frais de port"
+
+#: includes/classes/class.speedbox-shipping.php:209
+msgid "If the customer applies a valid coupon, shipping will be free."
+msgstr ""
+"Si le client applique un code promo valide, les frais de port seront offerts."
+
+#: includes/classes/class.speedbox-shipping.php:214
+msgid "Enabled"
+msgstr "Activé"
+
+#: includes/classes/class.speedbox-shipping.php:215
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: includes/classes/class.speedbox-shipping.php:219
+msgid "Delivery Fee Management"
+msgstr "Gestion de frais de livraison"
+
+#: includes/classes/class.speedbox-shipping.php:221
+msgid ""
+"Use of Speedbox rates (via API) with possibility of a supplement or specify "
+"delivery charges"
+msgstr ""
+"Utilisation du tarifs Speedbox ( via api ) avec possibilité d'un supplément ou "
+"spécifier des frais de livraison"
+
+#: includes/classes/class.speedbox-shipping.php:226
+msgid "Use of Speedbox rates (via API) + supplement"
+msgstr "Utilisation du tarifs Speedbox ( via api ) + supplément"
+
+#: includes/classes/class.speedbox-shipping.php:227
+msgid "Specify shipping costs"
+msgstr "Spécifier des frais de livraison"
+
+#: includes/classes/class.speedbox-shipping.php:231
+#: includes/classes/class.speedbox-shipping.php:232
+msgid "Overcost."
+msgstr "Supplément."
+
+#: includes/classes/class.speedbox-shipping.php:238
+msgid "default price."
+msgstr "Prix par defaut"
+
+#: includes/classes/class.speedbox-shipping.php:239
+msgid "Default price when the relay point is not yet selected."
+msgstr ""
+"Prix ​​par défaut lorsque le point de relais n'est pas encore sélectionné ( ou "
+"pas de selection d'adresse de livraison ) "
+
+#: includes/classes/class.speedbox-shipping.php:251
+msgid "Google Maps API Key"
+msgstr "Clé API Google Maps"
+
+#: includes/classes/class.speedbox-shipping.php:254
+msgid "Click here to retrieve your Google API Key"
+msgstr "Cliquez  pour générer votre clé API Google Maps"
+
+#: includes/classes/class.speedbox-shipping.php:329
+msgid "All of Morocco\n"
+msgstr "Tout le Maroc\n"
+
+#: includes/classes/class.speedbox-shipping.php:343
+#, php-format
+msgid "Weight (%s)"
+msgstr "Poids (%s)"
+
+#: includes/classes/class.speedbox-shipping.php:344
+#, php-format
+msgid "Total (%s)"
+msgstr "Total (%s)"
+
+#: includes/classes/class.speedbox-shipping.php:741
+#: includes/classes/class.speedbox-shipping.php:752
+msgid "Staut du colis Speedbox"
+msgstr "Staut du colis Speedbox"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:27
+msgid "Order ID"
+msgstr "ID Commande"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:28
+msgid "Date"
+msgstr "Date"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:29
+msgid "Customer"
+msgstr "Client"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:30
+msgid "Destination"
+msgstr "Adresse de livraison"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:31
+msgid "Weight"
+msgstr "Poids"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:32
+msgid "Amount"
+msgstr "Montant"
+
+#: includes/views/admin/html-admin-management-tab-heder.php:33
+msgid "Order Status"
+msgstr "Statut commande"
+
+#: includes/views/admin/html-admin-management.php:96
+msgid "Search something, separate values by semicolons ;"
+msgstr "Recherche par termes, séparez-les par des points-virgules ;"
+
+#: includes/views/admin/html-admin-table-rates.php:24
+msgid "Shipping Rates"
+msgstr "Gestion frais de port"
+
+#: includes/views/admin/html-admin-table-rates.php:36
+#: includes/views/admin/html-admin-zones-table.php:33
+msgid "ID"
+msgstr "ID"
+
+#: includes/views/admin/html-admin-table-rates.php:37
+msgid "Zone"
+msgstr "Zone"
+
+#: includes/views/admin/html-admin-table-rates.php:37
+msgid "Shipping zone, as defined in Shipping Zones table."
+msgstr "Zone de livraison, comme définie ci-dessus."
+
+#: includes/views/admin/html-admin-table-rates.php:38
+msgid "Condition"
+msgstr "Condition"
+
+#: includes/views/admin/html-admin-table-rates.php:38
+msgid "Choose which metric to base your table rate on."
+msgstr "Sélectionnez la méthode de calcul pour le calcul des frais de port."
+
+#: includes/views/admin/html-admin-table-rates.php:39
+msgid "Min"
+msgstr "Min"
+
+#: includes/views/admin/html-admin-table-rates.php:39
+msgid "Minimum, in decimal format. Inclusive."
+msgstr "Minimum inclus, au format décimal."
+
+#: includes/views/admin/html-admin-table-rates.php:40
+msgid "Max"
+msgstr "Max"
+
+#: includes/views/admin/html-admin-table-rates.php:40
+msgid "Maximum, in decimal format. Inclusive. To impose no upper limit, use *\"."
+msgstr ""
+"Maximum inclus, au format décimal. Pour ne pas imposer de limite maximale, "
+"saisissez  *"
+
+#: includes/views/admin/html-admin-table-rates.php:41
+msgid "Cost"
+msgstr "Coût"
+
+#: includes/views/admin/html-admin-table-rates.php:41
+msgid "Cost, excluding tax."
+msgstr "Coût, hors taxes."
+
+#: includes/views/admin/html-admin-table-rates.php:46
+msgid "Add Shipping Rate"
+msgstr "Ajouter une grille de frais de port"
+
+#: includes/views/admin/html-admin-table-rates.php:46
+msgid "Delete Selected Rates"
+msgstr "Supprimer les grilles sélectionnées"
+
+#: includes/views/admin/html-admin-table-rates.php:121
+msgid "Delete the selected rates?"
+msgstr "Supprimer les grilles sélectionnées ?"
+
+#: includes/views/admin/html-admin-zones-table.php:23
+msgid "Shipping Zones"
+msgstr "Zones de livraison"
+
+#: includes/views/admin/html-admin-zones-table.php:25
+msgid ""
+"After adding a shipping zone, hit \"Save changes\" so that it appears as an "
+"option in the table rate section."
+msgstr ""
+"Après avoir ajouté une zone de livraison, cliquez sur \"Enregistrer les "
+"changements\" pour qu'elle apparaisse dans la configuration des frais de port."
+
+#: includes/views/admin/html-admin-zones-table.php:34
+msgid "Name"
+msgstr "Nom"
+
+#: includes/views/admin/html-admin-zones-table.php:34
+msgid "Shipping zone name, will appear in table rates table."
+msgstr ""
+"Nom de la zone de livraison, tel qu'affiché dans la gestion des frais de port."
+
+#: includes/views/admin/html-admin-zones-table.php:35
+msgid "Cities"
+msgstr "Villes"
+
+#: includes/views/admin/html-admin-zones-table.php:35
+msgid "Add one or more Cities that are part of this shipping zone."
+msgstr ""
+"Ajoutez une ou plusieurs villes qui font partie de cette zone d'expédition."
+
+#: includes/views/admin/html-admin-zones-table.php:40
+msgid "Add Shipping Zone"
+msgstr "Ajouter une zone de livraison"
+
+#: includes/views/admin/html-admin-zones-table.php:40
+msgid "Delete Selected Zones"
+msgstr "Supprimer les zones sélectionnées"
+
+#: includes/views/admin/html-admin-zones-table.php:47
+msgid "Default Zone (All of Morocco)"
+msgstr "Zone par défaut (tout le Maroc)"
+
+#: includes/views/admin/html-admin-zones-table.php:48
+msgid "All of Morocco"
+msgstr "Tout le Maroc"
+
+#: includes/views/admin/html-admin-zones-table.php:125
+msgid "Delete the selected zones?"
+msgstr "Supprimer les zones sélectionnées ?"
+
+#: includes/views/frontend/html-front-points-relais.php:36
+msgid "Please select your Pickup point among this list"
+msgstr "Relais colis les plus proches"
+
+#: includes/views/frontend/html-front-points-relais.php:80
+msgid "Landmark"
+msgstr "Repère"
+
+#: includes/views/frontend/html-front-points-relais.php:86
+msgid "Opening Hours"
+msgstr "Horaires d'ouverture"
+
+#: includes/views/frontend/html-front-points-relais.php:87
+msgid "Monday"
+msgstr "Lundi"
+
+#: includes/views/frontend/html-front-points-relais.php:88
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: includes/views/frontend/html-front-points-relais.php:89
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: includes/views/frontend/html-front-points-relais.php:90
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: includes/views/frontend/html-front-points-relais.php:91
+msgid "Friday"
+msgstr "Vendredi"
+
+#: includes/views/frontend/html-front-points-relais.php:92
+msgid "Saturday"
+msgstr "Samedi"
+
+#: includes/views/frontend/html-front-points-relais.php:93
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: includes/views/frontend/html-front-points-relais.php:97
+msgid "Distance in KM"
+msgstr "Distance en km"
+
+#: includes/views/frontend/html-front-points-relais.php:98
+msgid "Pickup ID"
+msgstr "ID du point relais"
+
+#: includes/views/frontend/html-front-points-relais.php:104
+msgid "Closing period"
+msgstr "Fermé le"
+
+#: woocommerce-speedbox.php:78
+msgid "Speedbox management"
+msgstr "Gestion speedbox "

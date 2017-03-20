@@ -1,0 +1,557 @@
+
+
+#sb_relais_point_table
+{
+    padding-bottom:5px;
+    margin-top:0;
+    text-rendering:optimizelegibility;
+    width: 100%;
+}
+
+#tr_carrier_sb_relais
+{
+    padding:0;
+}
+
+div.sb_relais_error
+{
+    background-color:#a90034;
+    padding-left:10px;
+    padding-bottom:0;
+    font-size:13px;
+    color:#fff;
+    line-height:20px;
+}
+
+table.sb_relaistable
+{
+    border-style:none;
+    border-width:0;
+    padding:0;
+    background-color:#fff;
+    border-collapse:separate;
+    border-spacing:0 0;
+    padding-bottom:0!important;
+}
+
+table.sb_relais_container
+{
+    width:100%;
+}
+
+div.sb_relais_error
+{
+    background-color:#fff;
+    color:red;
+    text-align:center;
+    line-height:24px;
+    border:1px solid red;
+}
+
+
+.sb_headertd {
+    border-width: 0;
+    padding: 0;
+}
+#sb_div_relais_header
+{
+    width:100%;
+    height:25px;
+    line-height:24px;
+    padding:0;
+    background-color:#d51f4f;
+}
+
+#sb_div_relais_header p
+{
+    height:25px;
+    padding:0;
+    margin:0;
+    padding-left:15px;
+    font-size:13px;
+    color:#ffd437;
+    text-align: left !important;
+}
+
+
+
+#sb_div_relais_srch_panel {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+td.sb_tdpr
+{
+    border-color: #808285;
+    border-width: 0 0 1px 0;
+    padding: 5px 0px !important;
+}
+tr.sb_lignepr
+{
+    height: 50px;
+    display:inline-block;
+    padding:0;
+    width:97%;
+    border-style: none;
+    background-color:#fff !important;
+}
+
+.sb_lignepr:nth-child(7)
+{
+    border:none;
+}
+
+div.sb_logorelais {
+    min-width: 60px;
+    background: url(../../img/front/relais/carrier_speedbox_logo.png) no-repeat center ;
+    font-size: 0px;
+    float: left;
+    height: 60px;
+}
+
+div.sb_popinpr {
+    width: 18%;
+    font-size: 12px;
+    float: left;
+    height: 60px;
+    top: 33%;
+    position: relative;
+    color: #424143;
+}
+
+div.sb_adressepr {
+    font-size: 12px;
+    width: 50%;
+    float: left;
+    height: 60px;
+    line-height: 16px;
+    font-weight: normal;
+    top: 12%;
+    position: relative;
+    color: #424143;
+}
+
+div.sb_radiopr {
+    width: 8%;
+    font-size: 0px;
+    float: right;
+    height: 60px;
+    top: 45%;
+    position: relative;
+}
+
+div.sb_lignepr {
+    width: 100;
+    height: 100px;
+}
+
+div.sb_distancepr {
+    width: 20%;
+    font-size: 12px;
+    float: left;
+    height: 60px;
+    top: 33%;
+    position: relative;
+    font-weight: normal;
+}
+
+.sb_popinpr a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #424143;
+}
+
+.sb_popinpr a:hover {
+    color: #dc0032 ;
+}
+
+.sb_radiopr label span:hover
+{
+    cursor:pointer;
+}
+
+
+input[name=sb_relay_id]:not(old)
+{
+    width:2em;
+    margin:0;
+    padding:0;
+    font-size:1em;
+    opacity:0;
+}
+
+/* Bouton */
+input[name=sb_relay_id]:not(old) + label
+{
+    display:inline-block;
+    margin-left:0;
+    line-height:1.5em;
+    margin-top:-25px;
+}
+
+input[name=sb_relay_id]:not(old) + label > span
+{
+    display:inline-block;
+    width:35px;
+    height:25px;
+    margin:.25em;
+    vertical-align:bottom;
+}
+
+
+input[name=sb_relay_id]:not(old):checked + label > span
+{
+  
+}
+
+
+input[name=sb_relay_id]:not(old):checked + label > span:before
+{
+    content:'\f192';
+    display:block;
+    width:35px;
+    font-size:14px;
+    line-height:25px;
+    text-align:center;
+    color: #ffd437;
+    font-family: FontAwesome;
+}
+
+
+input[name=sb_relay_id]:not(old):checked + label > span > span
+{
+    display:block;
+    width:35px;
+    height:25px;
+    margin-top:-25px;
+    margin-right:0;
+}
+
+
+input[name=sb_relay_id]:not(old) + label > span:before
+{
+    content:'\f10c';
+    display:block;
+    width:35px;
+    color:#424143;
+    font-size:14px;
+    line-height:25px;
+    text-align:center;
+     color: #ffd437;
+    font-family: FontAwesome;
+}
+
+
+td.sb_radiopr label b
+{
+    display:none;
+}
+
+
+
+#sb_relais_filter {
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:#424143;
+    top:0;
+    left:0;
+    padding:14px;
+    text-align:left;
+    z-index:10000000;
+    opacity:0.85;
+    filter:alpha(opacity=85); /*IE8 et avant */
+}
+.sb_relaisbox
+{
+    font-family: sans-serif;
+    text-rendering:optimizelegibility;
+    display:block;
+    border-radius:6px;
+    position:fixed;
+    width:60%;
+    height:90%;
+    background-color:#FFF;
+    top:5%;
+    left:20%;
+    padding:0;
+    text-align:left;
+    z-index:100000000000000000000;
+}
+.boxcarto {
+    width:100%;
+    min-height: 62%; 
+    top: 0px;
+    left: 0px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.boxcarto img {
+    max-width: none !important;
+}
+div.gm-style-cc div {
+    display: none;
+}
+
+div.gm-style {
+    border-radius: 6px 6px 0 0;
+}
+
+.boxbottom {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.boxadresseheader { 
+    width: 240px;
+    height: 90px;
+    background: #fff;
+    font-weight:300;
+    font-size:12px;
+    text-align:center;
+    border-style: none;
+    line-height: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.boxadresse {
+    min-height:88px;
+    height:auto;
+    line-height: 22px;
+    font-size: 11px;
+    width: 240px;
+    margin-bottom: 0;
+    position: absolute;
+    left:0%;
+}
+
+.boxadresse p {
+    padding: 0;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.boxhoraires {
+    text-align:left;
+    background: #FFF;
+    height:auto;
+    line-height: 22px;
+    font-size: 11px;
+    width: 260px;
+    left: 250px;
+    position: absolute;
+}
+.boxhorairesheader { 
+    width: 240px;
+    height: 90px;
+    background: #fff;
+    font-weight:300;
+    font-size:12px;
+    text-align:center;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+
+.boxhoraires p span {
+    font-family:  sans-serif;
+    display: inline-block;
+    color: #dc0032;
+    font-size: 12px;
+    font-weight: 400;
+    width: 90px;
+    margin: 0;
+}
+
+.boxhoraires p {
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 5px;
+    line-height: 11px;
+    margin: 0 !important;
+}
+
+.boxinfos {
+    text-align:left;
+    background: #FFF;
+    height:auto;
+    line-height: 22px;
+    font-size: 11px;
+    width: 260px;
+    margin-right: 10px;
+    position: absolute;
+    left: 520px;
+}
+
+
+
+.boxinfos h5 {
+    font-family:  sans-serif;
+    display: inline-block;
+    color: #dc0032;
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    margin: 0;
+    text-transform: none;
+}
+.boxinfos img {
+   height: 162px;
+}
+.boxinfos h4 {
+    font-family:  sans-serif;
+    display: inline-block;
+    color: #dc0032;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100px;
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+.boxadresseheader img {
+    margin: 5px auto;
+}
+
+.boxhorairesheader img {
+    height: 64px;
+    width: 64px;
+    margin: 5px auto;
+}
+
+
+#boxinfoswarning {
+   display:inline;
+}
+
+.boxjour {
+    display:inline-block;
+    color:#dc0032; 
+    font-size: 12px;
+    font-weight:400;
+    min-width:75px;
+}
+
+.sb_relaisboxclose
+{
+    background:no-repeat;
+    cursor:pointer;
+    display:block;
+    position:fixed;
+    top:5%;
+    left:80.5%;
+    z-index:1111;
+    transition:all .15s;
+}
+
+.sb_relaisboxclose img
+{
+    float:right;
+    padding-top:2px;
+    padding-right:2px;
+}
+
+.sb_relaisboxclose:hover
+{
+    transform:rotate(90deg);
+}
+
+
+
+
+@media only screen and (max-width: 1350px) {
+    .sb_relaisbox
+    {
+        width:80%;
+        left:10%;
+        top:5%;
+    }
+    
+    .sb_relaisboxclose
+    {
+        left:91%;
+        top:5%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .boxinfos
+    {
+        display:none;
+    }
+    
+    .boxbottom
+    {
+        width:520px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #sb_div_relais_header
+    {
+        display:none;
+    }
+    
+    div.sb_logorelais
+    {
+        display:none;
+    }
+    
+    div.sb_adressepr
+    {
+        padding-left:0px;
+        font-size:10px;
+        width: 60%;
+    }
+    
+    div.sb_distancepr
+    {
+        font-size:10px;
+    }
+    
+   
+}
+
+@media only screen and (max-width: 680px) {
+    div.sb_popinpr
+    {
+        display:none;
+    }
+    
+    .boxcarto
+    {
+        min-height:33%;
+    }
+    
+    .boxadresse
+    {
+        position:relative;
+    }
+    
+    .boxhoraires
+    {
+        left:0;
+    }
+    
+    .boxbottom
+    {
+        width:250px;
+    }
+}
+
+
+@media only screen and (max-height: 610px) {
+    .boxcarto
+    {
+        display:none;
+    }
+}

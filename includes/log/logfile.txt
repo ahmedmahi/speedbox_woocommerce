@@ -1,0 +1,281 @@
+[19/Mar/2017:21:56:46] (index) 
+[19/Mar/2017:21:58:03] (index) 
+[19/Mar/2017:21:58:03] (index) 10000
+[19/Mar/2017:21:58:03] (index) Array
+(
+    [postalcodes] => Array
+        (
+            [0] => Array
+                (
+                    [Agadir] => 80000
+                )
+
+            [1] => Array
+                (
+                    [Al Hoceima] => 32000
+                )
+
+            [2] => Array
+                (
+                    [Azilal] => 22000
+                )
+
+            [3] => Array
+                (
+                    [Benimellal] => 23000
+                )
+
+            [4] => Array
+                (
+                    [Berkane] => 63300
+                )
+
+            [5] => Array
+                (
+                    [Ben Slimane] => 13000
+                )
+
+            [6] => Array
+                (
+                    [Boujdour] => 71000
+                )
+
+            [7] => Array
+                (
+                    [Boulemane] => 33000
+                )
+
+            [8] => Array
+                (
+                    [Casablanca] => 20000
+                )
+
+            [9] => Array
+                (
+                    [Chefchaouen] => 91000
+                )
+
+            [10] => Array
+                (
+                    [Chichaoua] => 41000
+                )
+
+            [11] => Array
+                (
+                    [Dakhla] => 73000
+                )
+
+            [12] => Array
+                (
+                    [El Jadida] => 24000
+                )
+
+            [13] => Array
+                (
+                    [Errachidia] => 52000
+                )
+
+            [14] => Array
+                (
+                    [Essaouira] => 44000
+                )
+
+            [15] => Array
+                (
+                    [Fes] => 30000
+                )
+
+            [16] => Array
+                (
+                    [Fnideq] => 93102
+                )
+
+            [17] => Array
+                (
+                    [Figuig] => 61000
+                )
+
+            [18] => Array
+                (
+                    [Fkih Ben Saleh] => 23200
+                )
+
+            [19] => Array
+                (
+                    [Guelmim] => 81000
+                )
+
+            [20] => Array
+                (
+                    [Ifrane] => 53000
+                )
+
+            [21] => Array
+                (
+                    [El Kelaa des Sraghna] => 43000
+                )
+
+            [22] => Array
+                (
+                    [Kenitra] => 14000
+                )
+
+            [23] => Array
+                (
+                    [Khemisset] => 15000
+                )
+
+            [24] => Array
+                (
+                    [Khenifra] => 54000
+                )
+
+            [25] => Array
+                (
+                    [Khouribga] => 25000
+                )
+
+            [26] => Array
+                (
+                    [Laayoune‎] => 70000
+                )
+
+            [27] => Array
+                (
+                    [Larache] => 92000
+                )
+
+            [28] => Array
+                (
+                    [Marrakech] => 40000
+                )
+
+            [29] => Array
+                (
+                    [Meknes] => 50000
+                )
+
+            [30] => Array
+                (
+                    [Midelt] => 54350
+                )
+
+            [31] => Array
+                (
+                    [Mohammedia] => 20650
+                )
+
+            [32] => Array
+                (
+                    [Nador] => 62000
+                )
+
+            [33] => Array
+                (
+                    [Ouarzazate] => 45000
+                )
+
+            [34] => Array
+                (
+                    [Oujda] => 60000
+                )
+
+            [35] => Array
+                (
+                    [Rabat] => 10000
+                )
+
+            [36] => Array
+                (
+                    [Safi] => 46000
+                )
+
+            [37] => Array
+                (
+                    [Saidia] => 63600
+                )
+
+            [38] => Array
+                (
+                    [Sala Al Jadida] => 11100
+                )
+
+            [39] => Array
+                (
+                    [Salé] => 11000
+                )
+
+            [40] => Array
+                (
+                    [Settat] => 26000
+                )
+
+            [41] => Array
+                (
+                    [Sefrou] => 31000
+                )
+
+            [42] => Array
+                (
+                    [Sidi Ifni] => 85200
+                )
+
+            [43] => Array
+                (
+                    [Sidi Kacem] => 16000
+                )
+
+            [44] => Array
+                (
+                    [Es-Semara] => 72000
+                )
+
+            [45] => Array
+                (
+                    [Tanger] => 90000
+                )
+
+            [46] => Array
+                (
+                    [Taounate] => 34000
+                )
+
+            [47] => Array
+                (
+                    [Taza] => 35000
+                )
+
+            [48] => Array
+                (
+                    [Tantan] => 82000
+                )
+
+            [49] => Array
+                (
+                    [Taroudant] => 83000
+                )
+
+            [50] => Array
+                (
+                    [Tata] => 84000
+                )
+
+            [51] => Array
+                (
+                    [Temara] => 12000
+                )
+
+            [52] => Array
+                (
+                    [Tetouan] => 93000
+                )
+
+            [53] => Array
+                (
+                    [Tiznit] => 85000
+                )
+
+        )
+
+)
+
