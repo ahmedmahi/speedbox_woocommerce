@@ -162,7 +162,7 @@ function woocommerce_speedbox_relais_init()
                         'title'       => __('Title', MD_SPEEDBOX_DOMAIN),
                         'type'        => 'text',
                         'description' => __('The title which the user sees during checkout.', MD_SPEEDBOX_DOMAIN),
-                        'default'     => __('Pickup point delivery', MD_SPEEDBOX_DOMAIN),
+                        'default'     => __('Livraison SpeedBox Relais', MD_SPEEDBOX_DOMAIN),
                     ),
 
                     'speedbox_relais_MerchantID'  => array(

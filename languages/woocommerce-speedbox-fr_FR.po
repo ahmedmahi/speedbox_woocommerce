@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: woocommerce speedbox v1.0.0\n"
-"POT-Creation-Date: 2017-03-20 10:10+0000\n"
-"PO-Revision-Date: 2017-03-20 10:15+0000\n"
+"POT-Creation-Date: 2017-03-20 11:05+0000\n"
+"PO-Revision-Date: 2017-03-20 11:05+0000\n"
 "Last-Translator: \n"
 "Language-Team: Ahmed MAHI <1hmedmahi@gmail.com>\n"
 "Language: fr_FR\n"
@@ -63,14 +63,6 @@ msgstr "Colis bien supprimé"
 #: includes/classes/class.speedbox-shipping-management.php:142
 msgid "Support well sent:"
 msgstr "Prise en charge bien envoyé :"
-
-#: includes/classes/class.speedbox-shipping-management.php:154
-msgid "Statut historique"
-msgstr "Historique des statuts"
-
-#: includes/classes/class.speedbox-shipping-management.php:155
-msgid "last updated timestamp"
-msgstr "Dernière mise à jour"
 
 #: includes/classes/class.speedbox-shipping-management.php:155
 msgid "d/m/Y H:i"
@@ -147,8 +139,8 @@ msgstr ""
 "livraison."
 
 #: includes/classes/class.speedbox-shipping.php:165
-msgid "Pickup point delivery"
-msgstr "Livraison en relais Pickup"
+msgid "Livraison SpeedBox Relais"
+msgstr "Livraison SpeedBox Relais"
 
 #: includes/classes/class.speedbox-shipping.php:169
 msgid "Merchant ID"
@@ -484,3 +476,12 @@ msgstr "Fermé le"
 #: woocommerce-speedbox.php:78
 msgid "Speedbox management"
 msgstr "Gestion speedbox "
+
+#~ msgid "Statut historique"
+#~ msgstr "Historique des statuts"
+
+#~ msgid "last updated timestamp"
+#~ msgstr "Dernière mise à jour"
+
+#~ msgid "Pickup point delivery"
+#~ msgstr "Livraison en relais Pickup"
