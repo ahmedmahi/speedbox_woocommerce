@@ -76,6 +76,7 @@ if (!class_exists('WC_Speedbox_Shipping_Relai_Management')) {
 
                         $this->apiPriseEnCharge($numero_prise_en_charge, $result['numero_speedbox'], $order_id);
                         $this->addNote_changeOrderStatut($order);
+                        $this->apiTracker($result['numero_speedbox'], $order_id);
 
                     } else {
                         wp_die('<div class="warnmsg">' . __('#order ID :' . $order_id . '# ' . $result, MD_SPEEDBOX_DOMAIN) . '</div>');
@@ -83,7 +84,7 @@ if (!class_exists('WC_Speedbox_Shipping_Relai_Management')) {
 
                 } elseif ($colis_numero_speedbox = get_post_meta($order->id, '_colis_numero_speedbox', true)) {
 
-                    $track = $this->apiTracker($colis_numero_speedbox, $order_id, true);
+                    $track = $this->apiTracker($colis_numero_speedbox, $order_id);
                     if (!$track['numero_prise_en_charge']) {
 
                         $this->apiPriseEnCharge($numero_prise_en_charge, $colis_numero_speedbox, $order_id);
@@ -159,7 +160,7 @@ if (!class_exists('WC_Speedbox_Shipping_Relai_Management')) {
             }
 
             $message    = ($dajatraite ? __('Parcels already treated here is the information:', MD_SPEEDBOX_DOMAIN) : '');
-            $post_metas = array('_colis_statut' => $track['statut']);
+            $post_metas = array('_colis_statut' => $track['Statut']);
 
             $this->valdate_print_message($track, $order_id, $message, $post_metas);
 
@@ -261,7 +262,7 @@ function display_management_page()
     /* Collect order data */
     foreach ($orders_ids as $post_id) {
         $colis_statut = get_post_meta($post_id, '_colis_statut', true);
-        if ($colis_statut != 'STATUT_RECU') {
+        if ($colis_statut != 'STATUT_RECU' && $colis_statut != 'STATUT_ANNULE') {
             $order    = wc_get_order($post_id);
             $order_id = $order->get_order_number();
 
@@ -280,17 +281,6 @@ function display_management_page()
 
         }
     }
+    include_once MD_SPEEDBOX_FILE_PATH . '/includes/views/admin/html-admin-management-boutons.php';
 
-    echo '
-            </tbody></table>
-            <p>
-                <input type="submit" class="button" name="envoiDPEC" value="' . __('Injection of treatment requests', MD_SPEEDBOX_DOMAIN) . '" />
-                <input type="submit" class="button" name="TrackerDPEC" value="' . __('Parcels trace', MD_SPEEDBOX_DOMAIN) . '" />
-                <input type="submit" class="button" name="deliveredOrders" value="' . __('Update delivered orders', MD_SPEEDBOX_DOMAIN) . '" />
-                <input type="submit" class="button" name="cancelDPEC" value="' . __('Cancel of treatment requests', MD_SPEEDBOX_DOMAIN) . '" />
-
-
-            </p>
-            </form>
-        ';
 }

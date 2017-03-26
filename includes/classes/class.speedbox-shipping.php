@@ -165,12 +165,6 @@ function woocommerce_speedbox_relais_init()
                         'default'     => __('Livraison SpeedBox Relais', MD_SPEEDBOX_DOMAIN),
                     ),
 
-                    'speedbox_relais_MerchantID'  => array(
-                        'title'       => __('Merchant ID', MD_SPEEDBOX_DOMAIN),
-                        'type'        => 'text',
-                        'description' => __('Please enter the merchant ID provided by SpeedBox.', MD_SPEEDBOX_DOMAIN),
-                        'default'     => '',
-                    ),
                     'api_token'                   => array(
                         'title'       => __('Api token', MD_SPEEDBOX_DOMAIN),
                         'type'        => 'text',
@@ -738,7 +732,12 @@ function display_admin_order_meta_speedbox_status($order)
 {
     $speedbox_helper = new WC_Speedbox_Helper();
     if ($speedbox_helper->get_shipping_method_id($order) == 'speedbox_relais') {
-        echo '<p><strong>' . __('Staut du colis Speedbox') . ':</strong> ' . get_post_meta($order->id, '_colis_statut', true) . '</p>';
+        $_colis_statut = get_post_meta($order->id, '_colis_statut', true);
+        if ($_colis_statut) {
+            include_once MD_SPEEDBOX_FILE_PATH . '/includes/views/admin/html-admin-order-infos-colis-view.php';
+
+        }
+
     }
 }
 add_action('woocommerce_admin_order_data_after_order_details', 'display_admin_order_meta_speedbox_status', 10, 1);

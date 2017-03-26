@@ -29,5 +29,6 @@ if (!defined('ABSPATH')) {
     <td class="prix" align="right"><?php echo number_format($order->get_total(), 2, '.', '') . ' ' . get_option('woocommerce_currency'); ?> </td>
 
     <td class="statutcommande" align="center"><?php echo wc_get_order_status_name($order->get_status()); ?></td>
+       <td class="statutcommande" align="center"><?php echo ($colis_statut) ? $colis_statut : '<span class="no_tr">Non traité</span>'; ?></td>
 
                         </tr>

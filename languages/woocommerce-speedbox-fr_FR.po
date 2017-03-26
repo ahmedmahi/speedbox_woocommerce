@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: woocommerce speedbox v1.0.0\n"
-"POT-Creation-Date: 2017-03-20 11:05+0000\n"
-"PO-Revision-Date: 2017-03-20 11:05+0000\n"
+"POT-Creation-Date: 2017-03-26 19:20+0100\n"
+"PO-Revision-Date: 2017-03-26 19:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: Ahmed MAHI <1hmedmahi@gmail.com>\n"
 "Language: fr_FR\n"
@@ -52,27 +52,27 @@ msgstr ""
 msgid "d/m/Y"
 msgstr ""
 
-#: includes/classes/class.speedbox-shipping-management.php:81
+#: includes/classes/class.speedbox-shipping-management.php:82
 msgid "#order ID :"
 msgstr "#Commande ID :"
 
-#: includes/classes/class.speedbox-shipping-management.php:124
+#: includes/classes/class.speedbox-shipping-management.php:125
 msgid "Package well removed"
 msgstr "Colis bien supprimé"
 
-#: includes/classes/class.speedbox-shipping-management.php:142
+#: includes/classes/class.speedbox-shipping-management.php:143
 msgid "Support well sent:"
 msgstr "Prise en charge bien envoyé :"
 
-#: includes/classes/class.speedbox-shipping-management.php:155
+#: includes/classes/class.speedbox-shipping-management.php:156
 msgid "d/m/Y H:i"
 msgstr ""
 
-#: includes/classes/class.speedbox-shipping-management.php:161
+#: includes/classes/class.speedbox-shipping-management.php:162
 msgid "Parcels already treated here is the information:"
 msgstr "Colis déjà traité voici les informations :"
 
-#: includes/classes/class.speedbox-shipping-management.php:172
+#: includes/classes/class.speedbox-shipping-management.php:173
 msgid ""
 "Dear customer, you can follow your Speedbox parcel delivery by Refresh a page"
 msgstr ""
@@ -80,41 +80,25 @@ msgstr ""
 "pouvez suivre l'acheminement de votre colis par Speedbox sur votre fiche "
 "commande dans la section \"Staut du colis Speedbox\"  tout en bas de la page."
 
-#: includes/classes/class.speedbox-shipping-management.php:188
-#: includes/classes/class.speedbox-shipping-management.php:190
+#: includes/classes/class.speedbox-shipping-management.php:189
+#: includes/classes/class.speedbox-shipping-management.php:191
 msgid "#Commande ID :"
 msgstr "#Commande ID :"
 
-#: includes/classes/class.speedbox-shipping-management.php:209
-#: includes/classes/class.speedbox-shipping-management.php:218
-#: includes/classes/class.speedbox-shipping-management.php:227
-#: includes/classes/class.speedbox-shipping-management.php:237
+#: includes/classes/class.speedbox-shipping-management.php:210
+#: includes/classes/class.speedbox-shipping-management.php:219
+#: includes/classes/class.speedbox-shipping-management.php:228
+#: includes/classes/class.speedbox-shipping-management.php:238
 msgid "No order selected"
 msgstr "Aucune commande sélectionnée"
 
-#: includes/classes/class.speedbox-shipping-management.php:246
+#: includes/classes/class.speedbox-shipping-management.php:247
 msgid "Delivered orders statuses were updated"
 msgstr "Les commandes livrées ont été mises à jour"
 
-#: includes/classes/class.speedbox-shipping-management.php:253
+#: includes/classes/class.speedbox-shipping-management.php:254
 msgid "There are no Speedbox orders"
 msgstr "Aucune commande Speedbox"
-
-#: includes/classes/class.speedbox-shipping-management.php:287
-msgid "Injection of treatment requests"
-msgstr "Envoyer une demande de prise en charge"
-
-#: includes/classes/class.speedbox-shipping-management.php:288
-msgid "Parcels trace"
-msgstr "Tracker les colis"
-
-#: includes/classes/class.speedbox-shipping-management.php:289
-msgid "Update delivered orders"
-msgstr "Traiter les commandes livrées"
-
-#: includes/classes/class.speedbox-shipping-management.php:290
-msgid "Cancel of treatment requests"
-msgstr "Annuler les colis"
 
 #: includes/classes/class.speedbox-shipping.php:80
 msgid "SpeedBox delivery plugin for WooCommerce - Morocco vendors only"
@@ -143,82 +127,74 @@ msgid "Livraison SpeedBox Relais"
 msgstr "Livraison SpeedBox Relais"
 
 #: includes/classes/class.speedbox-shipping.php:169
-msgid "Merchant ID"
-msgstr "ID Marchand"
-
-#: includes/classes/class.speedbox-shipping.php:171
-msgid "Please enter the merchant ID provided by SpeedBox."
-msgstr "Veuillez saisir l'ID Marchand fourni par SpeedBox."
-
-#: includes/classes/class.speedbox-shipping.php:175
 msgid "Api token"
 msgstr "Api token"
 
-#: includes/classes/class.speedbox-shipping.php:177
+#: includes/classes/class.speedbox-shipping.php:171
 msgid "Contact your SpeedBox sales representative to obtain this data"
 msgstr "Contacter votre attaché commercial SpeedBox pour obtenir ces données"
 
-#: includes/classes/class.speedbox-shipping.php:180
+#: includes/classes/class.speedbox-shipping.php:174
 msgid "Security Key"
 msgstr "Clé de sécurité"
 
-#: includes/classes/class.speedbox-shipping.php:182
+#: includes/classes/class.speedbox-shipping.php:176
 msgid "Please enter the secuity key provided by SpeedBox."
 msgstr "Veuillez saisir la clé de sécurité fournie par SpeedBox."
 
-#: includes/classes/class.speedbox-shipping.php:186
+#: includes/classes/class.speedbox-shipping.php:180
 msgid "SpeedBox Relais Webservice URL"
 msgstr "URL Webservice SpeedBox Relais"
 
-#: includes/classes/class.speedbox-shipping.php:188
+#: includes/classes/class.speedbox-shipping.php:182
 msgid "Please enter the SpeedBox Relais WebService URL."
 msgstr "Veuillez saisir l'URL du Webservice SpeedBox Relais"
 
-#: includes/classes/class.speedbox-shipping.php:192
+#: includes/classes/class.speedbox-shipping.php:186
 msgid "Enable Cash on Delivery"
 msgstr "Activer le Paiement à la Livraison"
 
-#: includes/classes/class.speedbox-shipping.php:194
+#: includes/classes/class.speedbox-shipping.php:188
 msgid "Link speedbox to \"cash at delivery\" mode native to woocommerce"
 msgstr ""
 "Lier speedbox au mode de \"paiement à la livraison\" natif de woocommerce ( si "
 "ce mode de paiement est activé est sélectionné par le client la valeur "
 "\"cash_due\" sera egale au valeur du montant de la commande )"
 
-#: includes/classes/class.speedbox-shipping.php:199
+#: includes/classes/class.speedbox-shipping.php:193
 msgid "Tax Status"
 msgstr "Statut fiscal"
 
-#: includes/classes/class.speedbox-shipping.php:203
+#: includes/classes/class.speedbox-shipping.php:197
 msgid "Taxable"
 msgstr "Appliquer la TVA"
 
-#: includes/classes/class.speedbox-shipping.php:204
+#: includes/classes/class.speedbox-shipping.php:198
 msgid "None"
 msgstr "Hors taxes"
 
-#: includes/classes/class.speedbox-shipping.php:208
+#: includes/classes/class.speedbox-shipping.php:202
 msgid "Enable free shipping coupons mangement"
 msgstr "Tenir compte des coupons offrant les frais de port"
 
-#: includes/classes/class.speedbox-shipping.php:209
+#: includes/classes/class.speedbox-shipping.php:203
 msgid "If the customer applies a valid coupon, shipping will be free."
 msgstr ""
 "Si le client applique un code promo valide, les frais de port seront offerts."
 
-#: includes/classes/class.speedbox-shipping.php:214
+#: includes/classes/class.speedbox-shipping.php:208
 msgid "Enabled"
 msgstr "Activé"
 
-#: includes/classes/class.speedbox-shipping.php:215
+#: includes/classes/class.speedbox-shipping.php:209
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: includes/classes/class.speedbox-shipping.php:219
+#: includes/classes/class.speedbox-shipping.php:213
 msgid "Delivery Fee Management"
 msgstr "Gestion de frais de livraison"
 
-#: includes/classes/class.speedbox-shipping.php:221
+#: includes/classes/class.speedbox-shipping.php:215
 msgid ""
 "Use of Speedbox rates (via API) with possibility of a supplement or specify "
 "delivery charges"
@@ -226,55 +202,70 @@ msgstr ""
 "Utilisation du tarifs Speedbox ( via api ) avec possibilité d'un supplément ou "
 "spécifier des frais de livraison"
 
-#: includes/classes/class.speedbox-shipping.php:226
+#: includes/classes/class.speedbox-shipping.php:220
 msgid "Use of Speedbox rates (via API) + supplement"
 msgstr "Utilisation du tarifs Speedbox ( via api ) + supplément"
 
-#: includes/classes/class.speedbox-shipping.php:227
+#: includes/classes/class.speedbox-shipping.php:221
 msgid "Specify shipping costs"
 msgstr "Spécifier des frais de livraison"
 
-#: includes/classes/class.speedbox-shipping.php:231
-#: includes/classes/class.speedbox-shipping.php:232
+#: includes/classes/class.speedbox-shipping.php:225
+#: includes/classes/class.speedbox-shipping.php:226
 msgid "Overcost."
 msgstr "Supplément."
 
-#: includes/classes/class.speedbox-shipping.php:238
+#: includes/classes/class.speedbox-shipping.php:232
 msgid "default price."
 msgstr "Prix par defaut"
 
-#: includes/classes/class.speedbox-shipping.php:239
+#: includes/classes/class.speedbox-shipping.php:233
 msgid "Default price when the relay point is not yet selected."
 msgstr ""
 "Prix ​​par défaut lorsque le point de relais n'est pas encore sélectionné ( ou "
 "pas de selection d'adresse de livraison ) "
 
-#: includes/classes/class.speedbox-shipping.php:251
+#: includes/classes/class.speedbox-shipping.php:245
 msgid "Google Maps API Key"
 msgstr "Clé API Google Maps"
 
-#: includes/classes/class.speedbox-shipping.php:254
+#: includes/classes/class.speedbox-shipping.php:248
 msgid "Click here to retrieve your Google API Key"
 msgstr "Cliquez  pour générer votre clé API Google Maps"
 
-#: includes/classes/class.speedbox-shipping.php:329
+#: includes/classes/class.speedbox-shipping.php:323
 msgid "All of Morocco\n"
 msgstr "Tout le Maroc\n"
 
-#: includes/classes/class.speedbox-shipping.php:343
+#: includes/classes/class.speedbox-shipping.php:337
 #, php-format
 msgid "Weight (%s)"
 msgstr "Poids (%s)"
 
-#: includes/classes/class.speedbox-shipping.php:344
+#: includes/classes/class.speedbox-shipping.php:338
 #, php-format
 msgid "Total (%s)"
 msgstr "Total (%s)"
 
-#: includes/classes/class.speedbox-shipping.php:741
-#: includes/classes/class.speedbox-shipping.php:752
+#: includes/classes/class.speedbox-shipping.php:751
 msgid "Staut du colis Speedbox"
 msgstr "Staut du colis Speedbox"
+
+#: includes/views/admin/html-admin-management-boutons.php:4
+msgid "Injection of treatment requests"
+msgstr "Envoyer une demande de prise en charge"
+
+#: includes/views/admin/html-admin-management-boutons.php:5
+msgid "Parcels trace"
+msgstr "Tracker les colis"
+
+#: includes/views/admin/html-admin-management-boutons.php:6
+msgid "Update delivered orders"
+msgstr "Traiter les commandes livrées"
+
+#: includes/views/admin/html-admin-management-boutons.php:7
+msgid "Cancel of treatment requests"
+msgstr "Annuler les colis"
 
 #: includes/views/admin/html-admin-management-tab-heder.php:27
 msgid "Order ID"
@@ -304,9 +295,26 @@ msgstr "Montant"
 msgid "Order Status"
 msgstr "Statut commande"
 
+#: includes/views/admin/html-admin-management-tab-heder.php:34
+#: includes/views/admin/html-admin-order-infos-colis-view.php:2
+msgid "Package status"
+msgstr "Statut du colis"
+
 #: includes/views/admin/html-admin-management.php:96
 msgid "Search something, separate values by semicolons ;"
 msgstr "Recherche par termes, séparez-les par des points-virgules ;"
+
+#: includes/views/admin/html-admin-order-infos-colis-view.php:1
+msgid "Speedbox Information"
+msgstr "Informations Speedbox"
+
+#: includes/views/admin/html-admin-order-infos-colis-view.php:3
+msgid "Number"
+msgstr "Numéro"
+
+#: includes/views/admin/html-admin-order-infos-colis-view.php:4
+msgid "Barcode"
+msgstr "Code barre"
 
 #: includes/views/admin/html-admin-table-rates.php:24
 msgid "Shipping Rates"
@@ -476,6 +484,12 @@ msgstr "Fermé le"
 #: woocommerce-speedbox.php:78
 msgid "Speedbox management"
 msgstr "Gestion speedbox "
+
+#~ msgid "Merchant ID"
+#~ msgstr "ID Marchand"
+
+#~ msgid "Please enter the merchant ID provided by SpeedBox."
+#~ msgstr "Veuillez saisir l'ID Marchand fourni par SpeedBox."
 
 #~ msgid "Statut historique"
 #~ msgstr "Historique des statuts"

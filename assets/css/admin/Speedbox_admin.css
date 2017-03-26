@@ -198,6 +198,10 @@ td.retour {
     text-align: center;
 }
 
+.no_tr {
+   color:#d51f4f;
+   font-weight: bold;
+}
 th {
     text-align: center !important;
 }
@@ -228,6 +232,9 @@ th.manage-column.column-order_weight {
     width: 60px;
 }
 th.manage-column.column-order_amount {
+    width: 90px;
+}
+th.manage-column.column-colis_status {
     width: 90px;
 }
 th.manage-column.column-order_status {

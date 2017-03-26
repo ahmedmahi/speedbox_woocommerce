@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
                     <th scope="col" id="order_weight" class="manage-column column-order_weight" style=""><?php echo __('Weight', MD_SPEEDBOX_DOMAIN); ?></th>
                     <th scope="col" id="order_amount" class="manage-column column-order_amount"  style=""><?php echo __('Amount', MD_SPEEDBOX_DOMAIN); ?></th>
                     <th scope="col" id="order_status" class="manage-column column-order_status" style=""><?php echo __('Order Status', MD_SPEEDBOX_DOMAIN); ?></th>
-
+                    <th scope="col" id="colis_status" class="manage-column column-colis_status" style=""><?php echo __('Package status', MD_SPEEDBOX_DOMAIN); ?></th>
                 </tr>
             </thead>
             <tbody id="the-list">
