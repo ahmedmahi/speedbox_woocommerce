@@ -12,7 +12,7 @@
  * Domain Path: /languages
  * @license:     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-ini_set('display_errors', 1);
+
 define('MD_SPEEDBOX_FILE_PATH', plugin_dir_path(__FILE__));
 define('MD_SPEEDBOX_ROOT_URL', plugins_url('', __FILE__));
 define('MD_SPEEDBOX_DOMAIN', 'woocommerce-speedbox');
