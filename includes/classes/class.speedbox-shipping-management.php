@@ -273,7 +273,7 @@ function display_management_page()
                     $order_weight = $order_weight + ($order->get_product_from_item($item)->get_weight() * $item['qty']);
                 }
 
-                $address = $order->shipping_company . '<br/>' . $order->shipping_postcode . ' ' . $order->shipping_city;
+                $address = get_post_meta($order->id, '_pointrelais_name', true) . '<br/>' . $order->shipping_postcode . ' ' . $order->shipping_city;
 
                 include MD_SPEEDBOX_FILE_PATH . '/includes/views/admin/html-admin-management-table-row.php';
 

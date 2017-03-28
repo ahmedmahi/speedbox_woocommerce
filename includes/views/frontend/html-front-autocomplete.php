@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 
 <script type="text/javascript"> jQuery(function() {
 
-
+<?php if ($settings['city_list'] == "no"): ?>
     jQuery("#billing_city").autocomplete({
         source: function(requete, reponse){ // les deux arguments représentent les données nécessaires au plugin
     $.ajax({
@@ -64,10 +64,12 @@ $("#shipping_city").autocomplete({
         jQuery("#shipping_state").change();
    }
 });
+<?php elseif ($settings['city_list'] == "yes"): ?>
 
 
+    $("select.city_select").select2();
 
-
+<?php endif;?>
 
 });
 

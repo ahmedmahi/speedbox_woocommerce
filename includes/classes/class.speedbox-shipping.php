@@ -248,6 +248,12 @@ function woocommerce_speedbox_relais_init()
                         'description' => '<a href="https://console.developers.google.com/flows/enableapi?apiid=maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend,places_backend&keyType=CLIENT_SIDE&reusekey=true" target="_blank">' . __('Click here to retrieve your Google API Key', MD_SPEEDBOX_DOMAIN),
 
                     ),
+                    'city_list'                   => array(
+                        'title'   => __('City as a drop-down list', MD_SPEEDBOX_DOMAIN),
+                        'type'    => 'checkbox',
+                        'label'   => __('Enable/Disable', MD_SPEEDBOX_DOMAIN),
+                        'default' => 'yes',
+                    ),
 
                 );
             }
@@ -683,7 +689,7 @@ function woocommerce_sppedbox_relais_checkout_controller()
 {
 
     global $woocommerce;
-
+    $settings = get_option('woocommerce_speedbox_relais_settings');
     include MD_SPEEDBOX_FILE_PATH . '/includes/views/frontend/html-front-autocomplete.php';
 
     $html = sppedbox_relais_front($woocommerce->customer);
@@ -723,6 +729,9 @@ function ajout_ID_point_relais($order_id)
     if (isset($_COOKIE['speedbox_selected_relais'])) {
         $point_relai = $_COOKIE['speedbox_selected_relais'];
         update_post_meta($order_id, '_pointrelais', sanitize_text_field($point_relai));
+        if (isset($_COOKIE['speedbox_selected_relais_name'])) {
+            update_post_meta($order_id, '_pointrelais_name', sanitize_text_field($_COOKIE['speedbox_selected_relais_name']));
+        }
     }
 
 }

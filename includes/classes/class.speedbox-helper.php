@@ -54,7 +54,8 @@ if (!class_exists('WC_Speedbox_Helper')) {
                 $ville_proche['min_city']['city'] = $city;
                 $ville_proche['distance']         = 1000;
 
-            } else if (!empty($city_data = $this->get_city_from_data($city, $zipcode))) {
+            } else if (!empty($city_data = $this->get_city_from_data($city/*, $zipcode*/))) {
+                // desactivation du recherche basé sur les codes postales
                 $cities                 = $speedbox_relais->speedbox_api->villes->get();
                 $ville_proche           = $this->min_circle_distance($city_data, $cities);
                 $speedbox_relais_points = $speedbox_relais->speedbox_api->points_relais->get_by_city($ville_proche['min_city']['city']);
@@ -184,7 +185,17 @@ if (!class_exists('WC_Speedbox_Helper')) {
             return $cities;
 
         }
+        public function get_cities_values_from_data()
+        {
+            $cities = array();
+            foreach ($this->get_cities_from_data() as $key => $val) {
 
+                $cities[$val] = $val;
+
+            }
+            return $cities;
+
+        }
         public function get_postalcode($city)
         {
 

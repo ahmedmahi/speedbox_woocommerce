@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: woocommerce speedbox v1.0.0\n"
-"POT-Creation-Date: 2017-03-26 19:20+0100\n"
-"PO-Revision-Date: 2017-03-26 19:20+0100\n"
+"POT-Creation-Date: 2017-03-28 17:13+0100\n"
+"PO-Revision-Date: 2017-03-28 17:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: Ahmed MAHI <1hmedmahi@gmail.com>\n"
 "Language: fr_FR\n"
@@ -26,23 +26,23 @@ msgstr ""
 msgid "This shipping method is only available in Morocco ."
 msgstr "Cette méthode d'expédition n'est disponible qu'au Maroc."
 
-#: includes/classes/class.speedbox-helper.php:63
+#: includes/classes/class.speedbox-helper.php:64
 msgid "There are no Pickup points near this address, please modify it."
 msgstr ""
 "Aucun point relais  n'est disponible autour de l'adresse saisie, merci de la "
 "modifier."
 
-#: includes/classes/class.speedbox-helper.php:104
-#: includes/classes/class.speedbox-helper.php:107
-#: includes/classes/class.speedbox-helper.php:110
-#: includes/classes/class.speedbox-helper.php:113
-#: includes/classes/class.speedbox-helper.php:116
-#: includes/classes/class.speedbox-helper.php:119
-#: includes/classes/class.speedbox-helper.php:122
+#: includes/classes/class.speedbox-helper.php:105
+#: includes/classes/class.speedbox-helper.php:108
+#: includes/classes/class.speedbox-helper.php:111
+#: includes/classes/class.speedbox-helper.php:114
+#: includes/classes/class.speedbox-helper.php:117
+#: includes/classes/class.speedbox-helper.php:120
+#: includes/classes/class.speedbox-helper.php:123
 msgid "Closed"
 msgstr "Fermé"
 
-#: includes/classes/class.speedbox-helper.php:133
+#: includes/classes/class.speedbox-helper.php:134
 msgid "Speedbox Relais is not available at the moment, please try again shortly."
 msgstr ""
 "Speedbox Relais est temporairement indisponible, merci de réessayer dans "
@@ -50,7 +50,7 @@ msgstr ""
 
 #: includes/classes/class.speedbox-shipping-management.php:59
 msgid "d/m/Y"
-msgstr ""
+msgstr "d/m/Y"
 
 #: includes/classes/class.speedbox-shipping-management.php:82
 msgid "#order ID :"
@@ -66,7 +66,7 @@ msgstr "Prise en charge bien envoyé :"
 
 #: includes/classes/class.speedbox-shipping-management.php:156
 msgid "d/m/Y H:i"
-msgstr ""
+msgstr "d/m/Y H:i"
 
 #: includes/classes/class.speedbox-shipping-management.php:162
 msgid "Parcels already treated here is the information:"
@@ -105,6 +105,7 @@ msgid "SpeedBox delivery plugin for WooCommerce - Morocco vendors only"
 msgstr "Module de livraison SpeedBox Relais pour WooCommerce - Maroc uniquement"
 
 #: includes/classes/class.speedbox-shipping.php:156
+#: includes/classes/class.speedbox-shipping.php:254
 msgid "Enable/Disable"
 msgstr "Activer/Désactiver"
 
@@ -233,21 +234,25 @@ msgstr "Clé API Google Maps"
 msgid "Click here to retrieve your Google API Key"
 msgstr "Cliquez  pour générer votre clé API Google Maps"
 
-#: includes/classes/class.speedbox-shipping.php:323
+#: includes/classes/class.speedbox-shipping.php:252
+msgid "City as a drop-down list"
+msgstr "Ville sous forme de liste déroulante"
+
+#: includes/classes/class.speedbox-shipping.php:329
 msgid "All of Morocco\n"
 msgstr "Tout le Maroc\n"
 
-#: includes/classes/class.speedbox-shipping.php:337
+#: includes/classes/class.speedbox-shipping.php:343
 #, php-format
 msgid "Weight (%s)"
 msgstr "Poids (%s)"
 
-#: includes/classes/class.speedbox-shipping.php:338
+#: includes/classes/class.speedbox-shipping.php:344
 #, php-format
 msgid "Total (%s)"
 msgstr "Total (%s)"
 
-#: includes/classes/class.speedbox-shipping.php:751
+#: includes/classes/class.speedbox-shipping.php:760
 msgid "Staut du colis Speedbox"
 msgstr "Staut du colis Speedbox"
 
@@ -481,9 +486,17 @@ msgstr "ID du point relais"
 msgid "Closing period"
 msgstr "Fermé le"
 
-#: woocommerce-speedbox.php:78
+#: woocommerce-speedbox.php:79
 msgid "Speedbox management"
 msgstr "Gestion speedbox "
+
+#: woocommerce-speedbox.php:88
+msgid "City"
+msgstr "Ville"
+
+#: woocommerce-speedbox.php:120
+msgid "Select a city&hellip;"
+msgstr "Sélectionnez une ville&hellip;"
 
 #~ msgid "Merchant ID"
 #~ msgstr "ID Marchand"

@@ -44,7 +44,7 @@ function write_point_relais_vlues(item, $position) {
     relais_data = $.parseJSON(value);
     $("#shipping_first_name").val($("#billing_first_name").val());
     $("#shipping_last_name").val($("#billing_last_name").val());
-    $("#shipping_company").val(relais_data.shop_name + ' (' + relais_data.relay_id + ')');
+    /*  $("#shipping_company").val(relais_data.shop_name + ' (' + relais_data.relay_id + ')');*/
     $("#shipping_address_1").val(relais_data.address1);
     $("#shipping_address_2").val(relais_data.address2);
     $("#shipping_city").val(relais_data.city);
@@ -57,6 +57,7 @@ function write_point_relais_vlues(item, $position) {
     var expire = new Date();
     expire.setDate(expire.getDate() + 1);
     document.cookie = 'speedbox_selected_relais' + '=' + $(item).attr('id') + ';expires=' + expire.toGMTString();
+    document.cookie = 'speedbox_selected_relais_name' + '=' + relais_data.shop_name + ';expires=' + expire.toGMTString();
     if (!$curcheck || ( /*$position != 'first' &&*/ $curcheck != $(item).attr('id'))) jQuery("#shipping_state").change();
 }
 
