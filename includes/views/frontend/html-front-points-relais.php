@@ -54,7 +54,7 @@ if (!defined('ABSPATH')) {
                         <div align="right" class="sb_distancepr"><a href="#!" onClick="popup_speedbox_view('<?php echo MD_SPEEDBOX_ROOT_URL; ?>','sb_relaydetail<?php echo $key; ?>','map_canvas<?php echo $key; ?>','<?php echo $item['coord_lat']; ?>','<?php echo $item['coord_long']; ?>')"><?php echo $item['distance']; ?> km</a></div>
                         <div align="center" class="sb_radiopr">
                             <input onclick="write_point_relais_vlues(document.getElementById('<?php echo $item['relay_id']; ?>'), '<?php echo ($ki == 0) ? 'first' : '' ?>')" type="radio" name="sb_relay_id" id="<?php echo $item['relay_id']; ?>" value='<?php echo json_encode($item); ?>'></input>
-                            <label for="<?php echo $item['relay_id']; ?>"><span><span></span></span><b><?php echo __('', MD_SPEEDBOX_DOMAIN); ?></b></label>
+                            <!--label for="<?php echo $item['relay_id']; ?>"><span><span></span></span><b><?php echo __('', MD_SPEEDBOX_DOMAIN); ?></b></label-->
                         </div>
                     </div>
                 </td></tr>

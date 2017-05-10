@@ -702,8 +702,8 @@ function woocommerce_sppedbox_relais_checkout_controller()
         print_r('<tr><td colspan="2">' . $html . '</div></td></tr>');
     } else {
         echo '<script type="text/javascript">
-                    if (typeof reset_point_relais_vlues === "function")
-                        reset_point_relais_vlues();
+                   /* if (typeof reset_point_relais_vlues === "function")
+                        reset_point_relais_vlues();*/
                 </script>';
     }
 }
@@ -731,6 +731,10 @@ function ajout_ID_point_relais($order_id)
         update_post_meta($order_id, '_pointrelais', sanitize_text_field($point_relai));
         if (isset($_COOKIE['speedbox_selected_relais_name'])) {
             update_post_meta($order_id, '_pointrelais_name', sanitize_text_field($_COOKIE['speedbox_selected_relais_name']));
+            update_post_meta($order_id, '_shipping_company', sanitize_text_field($_COOKIE['speedbox_selected_relais_name']));
+            update_post_meta($order_id, '_shipping_address_1', sanitize_text_field($_COOKIE['speedbox_selected_relais_address']));
+            update_post_meta($order_id, '_shipping_city', sanitize_text_field($_COOKIE['speedbox_selected_relais_city']));
+
         }
     }
 

@@ -44,8 +44,8 @@ if (!class_exists('WC_Speedbox_Helper')) {
             $speedbox_relais_points = array();
             $ville_proche           = array();
             $country                = $this->stripAccents($customer_data->country);
-            $city                   = $this->stripAccents($customer_data->city/*shipping_city*/);
-            $zipcode                = $customer_data->postcode/*shipping_postcode*/;
+            $city                   = $this->stripAccents($customer_data->shipping_city/*city*/);
+            $zipcode                = $customer_data->shipping_postcode/*postcode*/;
             $points_relais          = $speedbox_relais->speedbox_api->points_relais->get_by_city($city);
             if ($country != 'MA') {
                 $speedbox_relais_points = array('error' => __('This shipping method is only available in Morocco .', MD_SPEEDBOX_DOMAIN));
@@ -346,7 +346,7 @@ if (!class_exists('WC_Speedbox_Helper')) {
                 '53' => 'Guelmim-Es Semara',
                 '47' => 'Marrakech-Tensift-Al Haouz',
                 '48' => 'Meknès-Tafilalet',
-                '54' => 'l\'Oriental',
+                '54' => 'Oriental',
                 '49' => 'Rabat-Salé-Zemmour-Zaër',
                 '55' => 'Souss-Massa-Draâ',
                 '56' => 'Tadla-Azilal',

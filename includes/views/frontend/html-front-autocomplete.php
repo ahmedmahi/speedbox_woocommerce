@@ -20,7 +20,11 @@ if (!defined('ABSPATH')) {
 
 ?>
 
-<script type="text/javascript"> jQuery(function() {
+<script type="text/javascript">
+
+
+
+jQuery(function() {
 
 <?php if ($settings['city_list'] == "no"): ?>
     jQuery("#billing_city").autocomplete({
@@ -65,9 +69,15 @@ $("#shipping_city").autocomplete({
    }
 });
 <?php elseif ($settings['city_list'] == "yes"): ?>
-
-
     $("select.city_select").select2();
+
+    jQuery("#billing_city" ).change(function() {
+        on_change_city_billing() ;
+   });
+
+   jQuery("#shipping_city" ).change(function() {
+       on_change_city_shipping() ;
+  });
 
 <?php endif;?>
 

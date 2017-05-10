@@ -16,7 +16,7 @@ function speedbox_get_states()
         '53' => 'Guelmim-Es Semara',
         '47' => 'Marrakech-Tensift-Al Haouz',
         '48' => 'Meknès-Tafilalet',
-        '54' => 'l\'Oriental',
+        '54' => 'Oriental',
         '49' => 'Rabat-Salé-Zemmour-Zaër',
         '55' => 'Souss-Massa-Draâ',
         '56' => 'Tadla-Azilal',

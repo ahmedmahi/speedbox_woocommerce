@@ -26,7 +26,7 @@ function popup_speedbox_view(baseurl, id, mapid, lat, longti) {
 }
 
 function valideRelais() {
-    if ($("#ship-to-different-address-checkbox").attr('checked') && $('input[name=sb_relay_id]:checked', document).val()) {
+    if ($('input[name=sb_relay_id]:checked', document).val()) {
         $("#place_order").removeAttr('disabled');
         $('#place_order').removeClass('button').addClass('button alt');
         return true;
@@ -39,25 +39,21 @@ function valideRelais() {
 }
 
 function write_point_relais_vlues(item, $position) {
-    if (!$("#ship-to-different-address-checkbox").is(':checked')) $("#ship-to-different-address-checkbox").click();
     value = $(item).attr('value');
     relais_data = $.parseJSON(value);
-    $("#shipping_first_name").val($("#billing_first_name").val());
-    $("#shipping_last_name").val($("#billing_last_name").val());
-    /*  $("#shipping_company").val(relais_data.shop_name + ' (' + relais_data.relay_id + ')');*/
-    $("#shipping_address_1").val(relais_data.address1);
-    $("#shipping_address_2").val(relais_data.address2);
-    $("#shipping_city").val(relais_data.city);
-    $("#shipping_postcode").val(relais_data.postcode);
-    $("#billing_state").val(relais_data.state);
-    $("#shipping_state").val(relais_data.state);
-    $(".shipping_address").show();
+    if ($("#ship-to-different-address-checkbox").is(':checked')) {
+        $("#shipping_state").val(relais_data.state);
+    } else {
+        $("#billing_state").val(relais_data.state);
+    }
     valideRelais();
     $curcheck = getCookie('speedbox_selected_relais');
     var expire = new Date();
     expire.setDate(expire.getDate() + 1);
     document.cookie = 'speedbox_selected_relais' + '=' + $(item).attr('id') + ';expires=' + expire.toGMTString();
     document.cookie = 'speedbox_selected_relais_name' + '=' + relais_data.shop_name + ';expires=' + expire.toGMTString();
+    document.cookie = 'speedbox_selected_relais_address' + '=' + relais_data.address1 + ';expires=' + expire.toGMTString();
+    document.cookie = 'speedbox_selected_relais_city' + '=' + relais_data.city + ';expires=' + expire.toGMTString();
     if (!$curcheck || ( /*$position != 'first' &&*/ $curcheck != $(item).attr('id'))) jQuery("#shipping_state").change();
 }
 
@@ -77,25 +73,19 @@ function getCookie(cname) {
     return "";
 }
 
-function reset_point_relais_vlues() {
-    var regex = new RegExp(/\(P\d{5}\)/);
-    var company = document.getElementById('shipping_company');
-    var PickupID = company.value.substr(-7, 6);
-    if (regex.test(company.value) && $("#ship-to-different-address-checkbox").attr('checked')) {
-        $("#shipping_first_name").val($("#billing_first_name").val());
-        $("#shipping_last_name").val($("#billing_last_name").val());
-        $("#shipping_company").val($("#billing_company").val());
-        $("#shipping_address_1").val($("#billing_address_1").val());
-        $("#shipping_address_2").val($("#billing_address_2").val());
-        $("#shipping_postcode").val($("#billing_postcode").val());
-        $("#shipping_city").val($("#billing_city").val());
-        $(".shipping_address").hide();
-        document.getElementById('ship-to-different-address-checkbox').checked = false;
-        $('#shipping_postcode').trigger({
-            type: 'keydown',
-            which: 13,
-            keyCode: 13
-        });
+function on_change_city_billing() {
+    if ($('#shipping_method_0_speedbox_relais').is(':checked') && !$("#ship-to-different-address-checkbox").attr('checked')) {
+        if (!$("#billing_address_1").val()) $("#billing_address_1").val(".");
+        if (!$("#billing_postcode").val()) $("#billing_postcode").val("0");
+        if (!$("#billing_state").val()) $("#billing_state").val(".");
+    }
+}
+
+function on_change_city_shipping() {
+    if ($('#shipping_method_0_speedbox_relais').is(':checked')) {
+        if (!$("#shipping_address_1").val()) $("#shipping_address_1").val(".");
+        if (!$("#shipping_postcode").val()) $("#shipping_postcode").val("0");
+        if (!$("#shipping_state").val()) $("#shipping_state").val(".");
     }
 }
 $(document).ajaxComplete(function() {
